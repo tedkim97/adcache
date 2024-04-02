@@ -22,17 +22,28 @@ As a corporate entity, our executives are not liable for prison time and will pr
 
 [^4]: we are not doing anything... *yet*
 
+## April 2nd 2024 Update: THIS PROJECT IS DEPRECATED
+Due to several lawsuits and criminal investigations, DN$ needs to shutdown. Source code to setup your own DN$ resolver is here.
 
-Just send your DNS queries to `35.223.197.204` :). Try it out now:
+~Just send your DNS queries to `35.223.197.204` :). Try it out now:~
+
+
+## How to run
+```
+cargo build --release
+./target/release/adcache --forward-addr 1.1.1.1:53
+```
 
 ## Unix/MacOS
 ```
-dig @35.223.197.204 reddit.com
+dig ~@35.223.197.204~ reddit.com
+dig @127.0.0.1 reddit.com
 ```
 
 ## Windows Systems (requires powershell)
 ```
-Resolve-DnsName -Name reddit.com -Server 35.223.197.204
+Resolve-DnsName -Name reddit.com -Server ~35.223.197.204~
+Resolve-DnsName -Name reddit.com -Server 127.0.0.1
 ```
 
 # Internal Roadmap (DO NOT LEAK) 
@@ -63,12 +74,6 @@ Q4 2024 ( :moneybag: :moneybag: :moneybag: :moneybag: )
 - Close down the company and service because we're "not profitable" :disappointed: :cry: :triumph:
 
 /s
-
-## How to run
-```
-cargo build --release
-./target/release/adcache --help
-```
 
 
 
